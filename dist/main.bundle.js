@@ -271,7 +271,7 @@ AppComponent = __decorate([
 var AppConfig = (function () {
     function AppConfig() {
         this.appTitle = "Item selector application";
-        this.apiBase = "http://localhost:4200";
+        this.apiBase = "https://ranjithprabhuk.github.io/Item-Selector/dist";
     }
     return AppConfig;
 }());
