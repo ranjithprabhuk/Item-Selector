@@ -30,7 +30,7 @@
           <div class="row">
             <div class="col-md-4 cursor" *ngFor="let product of selectedCategory.products" (click)="addProduct(product);">
               <div class="btn btn-outline-primary btn-block">
-                <div class="col-xs-12 fa fa-user fa-3x"></div>
+                <div class="col-xs-12 fa fa-cubes fa-3x"></div>
                 <h6 class="col-12">{{product.productName}}</h6>
                 <button class="btn btn-success btn-sm">+ Add</button>
               </div>
@@ -44,7 +44,7 @@
         <li class="list-group-item">Selected Products <button type="button" *ngIf="selectedProducts.length" class="btn btn-danger btn-sm pull-right"
             (click)="clearAddedProducts();">Clear</button> </li>
         <li class="list-group-item" *ngFor="let product of selectedProducts; let i = index;">
-          <div class="col-xs-12 fa fa-user"> {{product.productName}}</div>
+          <div class="col-xs-12 fa fa-cubes"> {{product.productName}}</div>
           <span class="badge badge-danger badge-pill pull-right" (click)="removeProduct(i);"> - Remove</span>
 
         </li>
