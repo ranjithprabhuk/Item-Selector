@@ -4,7 +4,7 @@ Simple item selector application
 
 ## DEMO
 
-   You can see the application in the following url : Item-Selector[http://github.com/ranjithprabhuk]
+   You can see the application in the following url : [Item-Selector](https://ranjithprabhuk.github.io/Item-Selector/dist/)
 
 
 ## Installation
