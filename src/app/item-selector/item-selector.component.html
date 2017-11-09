@@ -5,7 +5,7 @@
     <div class="col-md-3">
       <ul class="list-group">
         <li class="list-group-item">Categories</li>
-        <li class="list-group-item" *ngFor="let category of itemList">{{category.categoryName}}
+        <li class="list-group-item" *ngFor="let category of itemList" (click)="selectedCategory=category;">{{category.categoryName}}
           <span class="badge badge-default badge-pill pull-right">{{category.products.length}}</span>
         </li>
       </ul>
@@ -16,12 +16,9 @@
         <div class="card-header">
           <div class="row">
             <div class="col-md-6">
-              <div class="input-group">
-                <input type="email" id="input2-group2" name="input2-group2" class="form-control" placeholder="Email">
-                <span class="input-group-btn" style="margin-top:8px;">
-                    <button type="button" class="btn btn-primary">A</button>
-                  </span>
-              </div>
+              <input class="form-control" auto-complete [(ngModel)]="product" (valueChanged)="onSelect($event);" value-property-name="productId"
+                display-property-name="productName" [list-formatter]="autocompleListFormatter" [source]="selectedCategory.products"
+              />
             </div>
             <div class="col-md-6">
               <h6 class="float-right"><span class="badge badge-warning">Product List</span></h6>
@@ -44,9 +41,9 @@
     <div class="col-md-3">
       <ul class="list-group">
         <li class="list-group-item">Selected Products</li>
-        <li class="list-group-item" *ngFor="let product of selectedProducts">
+        <li class="list-group-item" *ngFor="let product of selectedProducts; let i = index;">
           <div class="col-xs-12 fa fa-user"> {{product.productName}}</div>
-          <span class="badge badge-danger badge-pill pull-right"> - Remove</span>
+          <span class="badge badge-danger badge-pill pull-right" (click)="removeProduct(i);"> - Remove</span>
 
         </li>
         <li class="list-group-item" *ngIf="!selectedProducts.length">
