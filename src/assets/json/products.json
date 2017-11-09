@@ -5,87 +5,95 @@
         "products": [
             {
                 "productId": 11,
-                "productName": "Product 1"
+                "productName": "LG AC"
             },
             {
                 "productId": 12,
-                "productName": "Product 1"
+                "productName": "Samsung TV"
             },
             {
                 "productId": 13,
-                "productName": "Product 1"
+                "productName": "Samsung AC"
             },
             {
                 "productId": 14,
-                "productName": "Product 1"
+                "productName": "LG TV"
             },
             {
-                "productId": 15,
-                "productName": "Product 1"
+                "productId": 21,
+                "productName": "iPhone X"
             },
             {
-                "productId": 16,
-                "productName": "Product 1"
+                "productId": 22,
+                "productName": "iPhone 8"
+            },
+            {
+                "productId": 23,
+                "productName": "Moto X play"
+            },
+            {
+                "productId": 24,
+                "productName": "One Plus One"
+            },
+            {
+                "productId": 25,
+                "productName": "Lenevo 3311"
+            },
+            {
+                "productId": 26,
+                "productName": "Nokia 1100"
             }
         ]
     },
     {
-        "categoryId": 1,
-        "categoryName": "All",
+        "categoryId": 2,
+        "categoryName": "Electronics",
         "products": [
             {
                 "productId": 11,
-                "productName": "Product 1"
+                "productName": "LG AC"
             },
             {
                 "productId": 12,
-                "productName": "Product 1"
+                "productName": "Samsung TV"
             },
             {
                 "productId": 13,
-                "productName": "Product 1"
+                "productName": "Samsung AC"
             },
             {
                 "productId": 14,
-                "productName": "Product 1"
-            },
-            {
-                "productId": 15,
-                "productName": "Product 1"
-            },
-            {
-                "productId": 16,
-                "productName": "Product 1"
+                "productName": "LG TV"
             }
         ]
     },
     {
-        "categoryId": 1,
-        "categoryName": "All",
+        "categoryId": 3,
+        "categoryName": "Mobile Phones",
         "products": [
             {
-                "productId": 11,
-                "productName": "Product 1"
+                "productId": 21,
+                "productName": "iPhone X"
             },
             {
-                "productId": 12,
-                "productName": "Product 1"
+                "productId": 22,
+                "productName": "iPhone 8"
             },
             {
-                "productId": 13,
-                "productName": "Product 1"
+                "productId": 23,
+                "productName": "Moto X play"
             },
             {
-                "productId": 14,
-                "productName": "Product 1"
+                "productId": 24,
+                "productName": "One Plus One"
             },
             {
-                "productId": 15,
-                "productName": "Product 1"
+                "productId": 25,
+                "productName": "Lenevo 3311"
             },
             {
-                "productId": 16,
-                "productName": "Product 1"
+                "productId": 26,
+                "productName": "Nokia 1100"
             }
         ]
     }

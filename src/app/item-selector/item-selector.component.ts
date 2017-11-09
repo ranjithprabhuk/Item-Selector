@@ -49,6 +49,11 @@ export class ItemSelectorComponent {
         return category.categoryId==selected.categoryId ? true : false;
     }
 
+    //reset the added product grid
+    public clearAddedProducts() : void {
+        this.selectedProducts = [];
+    }
+
     //get the data from the service
     public getCategories(): void {
         this._itemSelectorService.getCategories().then(res => {
