@@ -7,7 +7,7 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'settle',
+    redirectTo: 'item-selector',
     pathMatch: 'full',
   },
   {
@@ -18,8 +18,8 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'settle',
-        loadChildren: './settle/settle.module#SettleModule'
+        path: 'item-selector',
+        loadChildren: './item-selector/item-selector.module#ItemSelectorModule'
       }
     ]
   }
