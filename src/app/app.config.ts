@@ -1,6 +1,6 @@
 export class AppConfig {
 
-    public appTitle: string = "Risk Application";
+    public appTitle: string = "Item selector application";
     public apiBase: string = "http://localhost:4200";
 
 }
