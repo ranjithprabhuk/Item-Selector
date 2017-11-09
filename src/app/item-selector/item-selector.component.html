@@ -5,7 +5,7 @@
     <div class="col-md-3">
       <ul class="list-group">
         <li class="list-group-item">Categories</li>
-        <li class="list-group-item" *ngFor="let category of itemList" (click)="selectedCategory=category;">{{category.categoryName}}
+        <li class="list-group-item cursor" *ngFor="let category of itemList" (click)="selectedCategory=category;">{{category.categoryName}}
           <span class="badge badge-default badge-pill pull-right">{{category.products.length}}</span>
         </li>
       </ul>
@@ -27,7 +27,7 @@
         </div>
         <div class="card-block">
           <div class="row">
-            <div class="col-md-4" *ngFor="let product of selectedCategory.products" (click)="addProduct(product);">
+            <div class="col-md-4 cursor" *ngFor="let product of selectedCategory.products" (click)="addProduct(product);">
               <div class="btn btn-outline-primary btn-block">
                 <div class="col-xs-12 fa fa-user fa-3x"></div>
                 <h5 class="col-12">Title</h5>
