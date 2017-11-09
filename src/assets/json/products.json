@@ -1,0 +1,92 @@
+[
+    {
+        "categoryId": 1,
+        "categoryName": "All",
+        "products": [
+            {
+                "productId": 11,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 12,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 13,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 14,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 15,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 16,
+                "productName": "Product 1"
+            }
+        ]
+    },
+    {
+        "categoryId": 1,
+        "categoryName": "All",
+        "products": [
+            {
+                "productId": 11,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 12,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 13,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 14,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 15,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 16,
+                "productName": "Product 1"
+            }
+        ]
+    },
+    {
+        "categoryId": 1,
+        "categoryName": "All",
+        "products": [
+            {
+                "productId": 11,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 12,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 13,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 14,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 15,
+                "productName": "Product 1"
+            },
+            {
+                "productId": 16,
+                "productName": "Product 1"
+            }
+        ]
+    }
+]

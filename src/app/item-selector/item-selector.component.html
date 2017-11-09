@@ -5,17 +5,8 @@
     <div class="col-md-3">
       <ul class="list-group">
         <li class="list-group-item">Categories</li>
-        <li class="list-group-item active">Cras justo odio
-          <span class="badge badge-default badge-pill pull-right">14</span>
-        </li>
-        <li class="list-group-item">Cras justo odio
-          <span class="badge badge-default badge-pill pull-right">14</span>
-        </li>
-        <li class="list-group-item">Cras justo odio
-          <span class="badge badge-default badge-pill pull-right">14</span>
-        </li>
-        <li class="list-group-item">Cras justo odio
-          <span class="badge badge-default badge-pill pull-right">14</span>
+        <li class="list-group-item" *ngFor="let category of itemList">{{category.categoryName}}
+          <span class="badge badge-default badge-pill pull-right">{{category.products.length}}</span>
         </li>
       </ul>
     </div>
@@ -39,45 +30,27 @@
         </div>
         <div class="card-block">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" *ngFor="let product of selectedCategory.products" (click)="addProduct(product);">
               <div class="btn btn-outline-primary btn-block">
                 <div class="col-xs-12 fa fa-user fa-3x"></div>
                 <h5 class="col-12">Title</h5>
                 <button class="btn btn-success btn-sm">+ Add</button>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="btn btn-outline-primary btn-block">
-                <div class="col-xs-12 fa fa-user fa-3x"></div>
-                <h5 class="col-12">Title</h5>
-                <button class="btn btn-success btn-sm">+ Add</button>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="btn btn-outline-primary btn-block">
-                <div class="col-xs-12 fa fa-user fa-3x"></div>
-                <h5 class="col-12">Title</h5>
-                <button class="btn btn-success btn-sm">+ Add</button>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-3">
       <ul class="list-group">
-        <li class="list-group-item justify-content-between">
-          Cras justo odio
-          <span class="badge badge-default badge-pill">14</span>
+        <li class="list-group-item">Selected Products</li>
+        <li class="list-group-item" *ngFor="let product of selectedProducts">
+          <div class="col-xs-12 fa fa-user"> {{product.productName}}</div>
+          <span class="badge badge-danger badge-pill pull-right"> - Remove</span>
+
         </li>
-        <li class="list-group-item justify-content-between">
-          Dapibus ac facilisis in
-          <span class="badge badge-default badge-pill">2</span>
-        </li>
-        <li class="list-group-item justify-content-between">
-          Morbi leo risus
-          <span class="badge badge-default badge-pill">1</span>
+        <li class="list-group-item" *ngIf="!selectedProducts.length">
+          No products added
         </li>
       </ul>
     </div>
