@@ -7,83 +7,11 @@ import { ItemSelectorService } from './item-selector.service';
 })
 export class ItemSelectorComponent {
 
-    constructor(private settleService: ItemSelectorService) { }
+    constructor(private _itemSelectorService: ItemSelectorService) { }
 
-    public itemList = [
-        {
-            "categoryId": 1,
-            "categoryName": "All",
-            "products": [
-                {
-                    "productId": 11,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 12,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 13,
-                    "productName": "Product 1"
-                }
-            ]
-        },
-        {
-            "categoryId": 1,
-            "categoryName": "All",
-            "products": [
-                {
-                    "productId": 11,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 12,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 13,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 14,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 15,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 16,
-                    "productName": "Product 1"
-                }
-            ]
-        },
-        {
-            "categoryId": 1,
-            "categoryName": "All",
-            "products": [
-                {
-                    "productId": 11,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 12,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 13,
-                    "productName": "Product 1"
-                },
-                {
-                    "productId": 14,
-                    "productName": "Product 1"
-                }
-            ]
-        }
-    ];
-
-    public selectedCategory = this.itemList[0];
-    public selectedProducts = [];
+    public itemList: Array<any> = [];
+    public selectedCategory: any = {};
+    public selectedProducts: Array<any> = [];
     public product: string = "";
 
 
@@ -99,9 +27,9 @@ export class ItemSelectorComponent {
         this.selectedProducts.splice(index, 1);
     }
 
-    //format the list data
+    //format the data to list in the auto complete
     public autocompleListFormatter(data: any): string {
-        return `(${data['productId']}) ${data['productName']}`;
+        return `${data['productName']}`;
     }
 
     //on value selected from the dropdown and reset the dropdown
@@ -113,6 +41,21 @@ export class ItemSelectorComponent {
     //reset the input value
     public resetSearchBox(): void {
         this.product = "";
+    }
+
+    //get the data from the service
+    public getCategories(): void {
+        this._itemSelectorService.getCategories().then(res => {
+            this.itemList = JSON.parse(res);
+            this.selectedCategory = this.itemList[0]; //by default select the first array
+        }).catch(err => {
+            console.log("error: ", err);
+        })
+    }
+
+    //load the required data on component load
+    ngOnInit(): void {
+        this.getCategories();
     }
 
 

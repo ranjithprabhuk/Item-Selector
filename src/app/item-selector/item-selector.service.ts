@@ -9,12 +9,12 @@ import 'rxjs/add/operator/toPromise';
 export class ItemSelectorService {
 
     constructor(private apiService: ApiService) { }
-    protected apiEndPoint: string = "/assets/csv/";
+    protected apiEndPoint: string = "/assets/json/";
 
-    //to get the Data from the CSV file
-    getSettleData(parameter?:any): Promise<any> {
+    //to get the Data from the static json file
+    getCategories(parameter?:any): Promise<any> {
         let params: URLSearchParams = new URLSearchParams();
-        return this.apiService.get(this.apiEndPoint+"Settled.csv")
+        return this.apiService.get(this.apiEndPoint+"products.json")
             .then(res => { return Promise.resolve(res)})
             .catch(err => { return Promise.reject(err)});
     }
