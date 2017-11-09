@@ -3,6 +3,7 @@ import { ItemSelectorService } from './item-selector.service';
 
 @Component({
     templateUrl: 'item-selector.component.html',
+    styleUrls : ['item-selector.component.scss'],
     providers: [ItemSelectorService]
 })
 export class ItemSelectorComponent {
@@ -41,6 +42,11 @@ export class ItemSelectorComponent {
     //reset the input value
     public resetSearchBox(): void {
         this.product = "";
+    }
+
+    //check the category is the selected one in the list
+    public isSelecetdCategory(category,selected) : boolean {
+        return category.categoryId==selected.categoryId ? true : false;
     }
 
     //get the data from the service
