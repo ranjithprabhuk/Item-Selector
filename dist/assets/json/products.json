@@ -1,0 +1,100 @@
+[
+    {
+        "categoryId": 1,
+        "categoryName": "All",
+        "products": [
+            {
+                "productId": 11,
+                "productName": "LG AC"
+            },
+            {
+                "productId": 12,
+                "productName": "Samsung TV"
+            },
+            {
+                "productId": 13,
+                "productName": "Samsung AC"
+            },
+            {
+                "productId": 14,
+                "productName": "LG TV"
+            },
+            {
+                "productId": 21,
+                "productName": "iPhone X"
+            },
+            {
+                "productId": 22,
+                "productName": "iPhone 8"
+            },
+            {
+                "productId": 23,
+                "productName": "Moto X play"
+            },
+            {
+                "productId": 24,
+                "productName": "One Plus One"
+            },
+            {
+                "productId": 25,
+                "productName": "Lenevo 3311"
+            },
+            {
+                "productId": 26,
+                "productName": "Nokia 1100"
+            }
+        ]
+    },
+    {
+        "categoryId": 2,
+        "categoryName": "Electronics",
+        "products": [
+            {
+                "productId": 11,
+                "productName": "LG AC"
+            },
+            {
+                "productId": 12,
+                "productName": "Samsung TV"
+            },
+            {
+                "productId": 13,
+                "productName": "Samsung AC"
+            },
+            {
+                "productId": 14,
+                "productName": "LG TV"
+            }
+        ]
+    },
+    {
+        "categoryId": 3,
+        "categoryName": "Mobile Phones",
+        "products": [
+            {
+                "productId": 21,
+                "productName": "iPhone X"
+            },
+            {
+                "productId": 22,
+                "productName": "iPhone 8"
+            },
+            {
+                "productId": 23,
+                "productName": "Moto X play"
+            },
+            {
+                "productId": 24,
+                "productName": "One Plus One"
+            },
+            {
+                "productId": 25,
+                "productName": "Lenevo 3311"
+            },
+            {
+                "productId": 26,
+                "productName": "Nokia 1100"
+            }
+        ]
+    }
+]
